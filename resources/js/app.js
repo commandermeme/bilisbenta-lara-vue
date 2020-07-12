@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Vue.use(VueScrollTo);
 Vue.use(VueRouter);
 =======
@@ -24,6 +25,12 @@ new Vue({
     render: h => h(App)
 }).$mount('#app')
 =======
+=======
+require('./bootstrap');
+
+window.Vue = require('vue');
+
+>>>>>>> parent of d34315a... Added Vue UI
 =======
 require('./bootstrap');
 
@@ -60,6 +67,9 @@ const app = new Vue({
 });
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of d34315a... Added Vue UI
+=======
 >>>>>>> parent of d34315a... Added Vue UI
 =======
 >>>>>>> parent of d34315a... Added Vue UI
