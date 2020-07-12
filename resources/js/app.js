@@ -5,6 +5,7 @@
  */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Vue.use(VueScrollTo);
 Vue.use(VueRouter);
 =======
@@ -22,6 +23,12 @@ new Vue({
     render: h => h(App)
 }).$mount('#app')
 =======
+=======
+require('./bootstrap');
+
+window.Vue = require('vue');
+
+>>>>>>> parent of d34315a... Added Vue UI
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -44,4 +51,7 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 const app = new Vue({
     el: '#app',
 });
+<<<<<<< HEAD
+>>>>>>> parent of d34315a... Added Vue UI
+=======
 >>>>>>> parent of d34315a... Added Vue UI
