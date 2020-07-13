@@ -88,7 +88,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.register[data-v-3563ad7c] {\r\n    padding-top: 10%;\r\n    background-image: url('/img/login-background.png');\r\n    height: 100vh;\r\n    background-repeat: no-repeat;\r\n    background-size: cover;\r\n    background-attachment: fixed;\n}\r\n", ""]);
+exports.push([module.i, "\n.register[data-v-3563ad7c] {\n    padding-top: 10%;\n    background-image: url('/img/login-background.png');\n    height: 100vh;\n    background-repeat: no-repeat;\n    background-size: cover;\n    background-attachment: fixed;\n}\n", ""]);
 
 // exports
 

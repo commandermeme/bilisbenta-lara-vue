@@ -256,14 +256,18 @@ var staticRenderFns = [
             _c("div", { staticClass: "form-check" }, [
               _c("input", {
                 staticClass: "form-check-input",
-                attrs: { type: "checkbox", name: "remember", id: "remember" }
+                attrs: {
+                  type: "checkbox",
+                  name: "remember_me",
+                  id: "remember_me"
+                }
               }),
               _vm._v(" "),
               _c(
                 "label",
                 {
                   staticClass: "form-check-label text-muted",
-                  attrs: { for: "remember" }
+                  attrs: { for: "remember_me" }
                 },
                 [_vm._v("Remember Me")]
               )

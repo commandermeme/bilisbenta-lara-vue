@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- navbar -->
-    
+    <Navbar/>
     <!-- //end of navbar -->
     <!-- home -->
     <div class="image-parallax" id="home">
@@ -198,7 +198,7 @@
                 </div>
                 <div class="card-body">
                   <p class="packages">
-                    <br>Exclusive access to 
+                    <br>Exclusive access to
                     <br>BilisBenta top Sellers
                     <br>Elite Seller Report
                     <br>All Premium Data Exports
@@ -217,7 +217,7 @@
               </div>
               <div class="card-body">
                 <p class="packages">
-                  <br>Exclusive access to 
+                  <br>Exclusive access to
                   <br>BilisBenta top Sellers
                   <br>Elite Seller Report
                   <br>All Premium Data Exports
@@ -236,7 +236,7 @@
               </div>
               <div class="card-body">
                 <p class="packages">
-                  <br>Exclusive access to 
+                  <br>Exclusive access to
                   <br>BilisBenta top Sellers
                   <br>Elite Seller Report
                   <br>All Premium Data Exports
@@ -269,8 +269,13 @@
 </template>
 
 <script>
+import Navbar from '../components/Navbar';
+
 export default {
-    name: "Content"
+    name: "Content",
+    components: {
+        Navbar
+    }
 }
 </script>
 
@@ -287,7 +292,7 @@ export default {
     border-bottom: 5px solid transparent;
     height:100%;
   }
-  
+
   .nav-link:hover {
     border-bottom: 5px solid #3490dc;
   }

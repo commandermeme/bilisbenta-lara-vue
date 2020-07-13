@@ -251,20 +251,15 @@ if(false) {}
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _components_Navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/Navbar */ "./resources/js/components/Navbar.vue");
 //
 //
 //
 //
 //
 //
-//
-
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "app",
-  components: {
-    Navbar: _components_Navbar__WEBPACK_IMPORTED_MODULE_0__["default"]
-  }
+  components: {}
 });
 
 /***/ }),
@@ -278,6 +273,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _components_Navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Navbar */ "./resources/js/components/Navbar.vue");
 //
 //
 //
@@ -548,8 +544,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "Content"
+  name: "Content",
+  components: {
+    Navbar: _components_Navbar__WEBPACK_IMPORTED_MODULE_0__["default"]
+  }
 });
 
 /***/ }),
@@ -706,7 +706,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n#app {\r\n  font-family: Nunito;\n}\r\n", ""]);
+exports.push([module.i, "\n#app {\n  font-family: Nunito;\n}\n", ""]);
 
 // exports
 
@@ -1882,12 +1882,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { attrs: { id: "app" } },
-    [_c("Navbar"), _vm._v(" "), _c("router-view")],
-    1
-  )
+  return _c("div", { attrs: { id: "app" } }, [_c("router-view")], 1)
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -1911,395 +1906,174 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "div",
+    [
+      _c("Navbar"),
+      _vm._v(" "),
+      _vm._m(0),
+      _vm._v(" "),
+      _vm._m(1),
+      _vm._v(" "),
+      _vm._m(2),
+      _vm._v(" "),
+      _vm._m(3),
+      _vm._v(" "),
+      _vm._m(4),
+      _vm._v(" "),
+      _vm._m(5),
+      _vm._v(" "),
+      _vm._m(6),
+      _vm._v(" "),
+      _vm._m(7)
+    ],
+    1
+  )
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("div", { staticClass: "image-parallax", attrs: { id: "home" } }, [
-        _c("div", { staticClass: "container" }, [
-          _c(
-            "div",
-            {
-              staticClass: "para-text",
-              attrs: {
-                "data-aos": "fade-right",
-                "data-aos-offset": "400",
-                "data-aos-duration": "1000"
-              }
-            },
-            [
-              _c("p", { staticClass: "mb-0" }, [_vm._v("Online Selling")]),
-              _vm._v(" "),
-              _c("p", { staticClass: "text-primary" }, [_vm._v("Made Easy.")])
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "para-text-2",
-              attrs: {
-                "data-aos": "fade-left",
-                "data-aos-offset": "200",
-                "data-aos-duration": "1000"
-              }
-            },
-            [
-              _c("p", { staticClass: "m-0" }, [_vm._v("Your ONE STOP SHOP")]),
-              _vm._v(" "),
-              _c("p", { staticClass: "m-0" }, [
-                _vm._v("for all your Online Selling.")
-              ])
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              attrs: { "data-aos": "flip-right", "data-aos-duration": "1000" }
-            },
-            [
-              _c(
-                "a",
-                {
-                  staticClass: "btn btn-lg btn-primary py-3 px-5 mt-3",
-                  attrs: { href: "#" }
-                },
-                [_vm._v("Get Started")]
-              )
-            ]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c(
-        "section",
-        { staticClass: "bg-white section", attrs: { id: "about" } },
-        [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                {
-                  staticClass: "col-md-5 mb-3",
-                  attrs: {
-                    "data-aos": "fade-right",
-                    "data-aos-offset": "400",
-                    "data-aos-duration": "1000"
-                  }
-                },
-                [
-                  _c("p", { staticClass: "section-vid-text-1" }, [
-                    _vm._v(
-                      "Looking for a new business, ride the booming business of E-commerce."
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("p", { staticClass: "section-vid-text-2 mt-4" }, [
-                    _vm._v(
-                      "Sell on Lazada, Shopee or your own Shopify website."
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "btn btn-lg btn-outline-primary px-5 mt-3",
-                      attrs: { href: "#" }
-                    },
-                    [
-                      _vm._v("How it works "),
-                      _c("span", { staticClass: "small" }, [_vm._v(" >")])
-                    ]
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "col-md-7",
-                  attrs: {
-                    "data-aos": "fade-left",
-                    "data-aos-offset": "400",
-                    "data-aos-duration": "1000"
-                  }
-                },
-                [
-                  _c("a", { attrs: { href: "" } }, [
-                    _c("img", {
-                      staticClass: "img-fluid",
-                      attrs: { src: "/img/about-background.png", alt: "" }
-                    })
-                  ])
-                ]
-              )
+    return _c("div", { staticClass: "image-parallax", attrs: { id: "home" } }, [
+      _c("div", { staticClass: "container" }, [
+        _c(
+          "div",
+          {
+            staticClass: "para-text",
+            attrs: {
+              "data-aos": "fade-right",
+              "data-aos-offset": "400",
+              "data-aos-duration": "1000"
+            }
+          },
+          [
+            _c("p", { staticClass: "mb-0" }, [_vm._v("Online Selling")]),
+            _vm._v(" "),
+            _c("p", { staticClass: "text-primary" }, [_vm._v("Made Easy.")])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "para-text-2",
+            attrs: {
+              "data-aos": "fade-left",
+              "data-aos-offset": "200",
+              "data-aos-duration": "1000"
+            }
+          },
+          [
+            _c("p", { staticClass: "m-0" }, [_vm._v("Your ONE STOP SHOP")]),
+            _vm._v(" "),
+            _c("p", { staticClass: "m-0" }, [
+              _vm._v("for all your Online Selling.")
             ])
-          ])
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "section",
-        { staticClass: "section section-2", attrs: { id: "how-it-works" } },
-        [
-          _c("div", { staticClass: "container" }, [
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { attrs: { "data-aos": "flip-right", "data-aos-duration": "1000" } },
+          [
+            _c(
+              "a",
+              {
+                staticClass: "btn btn-lg btn-primary py-3 px-5 mt-3",
+                attrs: { href: "#" }
+              },
+              [_vm._v("Get Started")]
+            )
+          ]
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "section",
+      { staticClass: "bg-white section", attrs: { id: "about" } },
+      [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
             _c(
               "div",
               {
-                staticClass: "text-center",
+                staticClass: "col-md-5 mb-3",
                 attrs: {
-                  "data-aos": "fade-down",
+                  "data-aos": "fade-right",
                   "data-aos-offset": "400",
                   "data-aos-duration": "1000"
                 }
               },
               [
                 _c("p", { staticClass: "section-vid-text-1" }, [
-                  _c("span", { staticClass: "text-primary" }, [
-                    _vm._v("We've brought more than 50,000 Products")
-                  ]),
                   _vm._v(
-                    " to sell in one Roof from different manufacturers and suppliers in to one marketplace."
+                    "Looking for a new business, ride the booming business of E-commerce."
                   )
-                ])
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "section-vid-text-2 mt-4" }, [
+                  _vm._v("Sell on Lazada, Shopee or your own Shopify website.")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn btn-lg btn-outline-primary px-5 mt-3",
+                    attrs: { href: "#" }
+                  },
+                  [
+                    _vm._v("How it works "),
+                    _c("span", { staticClass: "small" }, [_vm._v(" >")])
+                  ]
+                )
               ]
             ),
             _vm._v(" "),
             _c(
               "div",
               {
-                staticClass: "text-center",
+                staticClass: "col-md-7",
                 attrs: {
-                  "data-aos": "fade-down",
+                  "data-aos": "fade-left",
                   "data-aos-offset": "400",
                   "data-aos-duration": "1000"
                 }
               },
               [
-                _c("p", { staticClass: "section-vid-text-2 mt-4 px-5" }, [
-                  _vm._v(
-                    "You can list and sell products without ever having to buy inventory up front or pack and ship orders."
-                  )
+                _c("a", { attrs: { href: "" } }, [
+                  _c("img", {
+                    staticClass: "img-fluid",
+                    attrs: { src: "/img/about-background.png", alt: "" }
+                  })
                 ])
               ]
-            ),
-            _vm._v(" "),
-            _c("div", { staticClass: "row my-5 pt-5" }, [
-              _c(
-                "div",
-                {
-                  staticClass: "col-md-2 card-group",
-                  attrs: {
-                    "data-aos": "fade-up",
-                    "data-aos-offset": "200",
-                    "data-aos-duration": "500"
-                  }
-                },
-                [
-                  _c("div", { staticClass: "card border-0" }, [
-                    _c("div", { staticClass: "card-body" }, [
-                      _c("div", { staticClass: "num-circle" }, [_vm._v("1")]),
-                      _vm._v(" "),
-                      _c("img", {
-                        staticClass: "card-img mx-auto d-block mt-4",
-                        attrs: { src: "/img/01.png", alt: "" }
-                      }),
-                      _vm._v(" "),
-                      _c(
-                        "p",
-                        { staticClass: "card-text text-center px-2 mt-4" },
-                        [_c("strong", [_vm._v("Sign up and log in")])]
-                      )
-                    ])
-                  ])
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "col-md-2 card-group",
-                  attrs: {
-                    "data-aos": "fade-up",
-                    "data-aos-offset": "200",
-                    "data-aos-duration": "800"
-                  }
-                },
-                [
-                  _c("div", { staticClass: "card border-0" }, [
-                    _c("div", { staticClass: "card-body" }, [
-                      _c("div", { staticClass: "num-circle" }, [_vm._v("2")]),
-                      _vm._v(" "),
-                      _c("img", {
-                        staticClass: "card-img mx-auto d-block mt-4",
-                        attrs: { src: "/img/02.png", alt: "" }
-                      }),
-                      _vm._v(" "),
-                      _c(
-                        "p",
-                        { staticClass: "card-text text-center px-2 mt-4" },
-                        [
-                          _c("strong", [
-                            _vm._v("Free Browsing on all the packages we offer")
-                          ])
-                        ]
-                      )
-                    ])
-                  ])
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "col-md-2 card-group",
-                  attrs: {
-                    "data-aos": "fade-up",
-                    "data-aos-offset": "200",
-                    "data-aos-duration": "1100"
-                  }
-                },
-                [
-                  _c("div", { staticClass: "card border-0" }, [
-                    _c("div", { staticClass: "card-body" }, [
-                      _c("div", { staticClass: "num-circle" }, [_vm._v("3")]),
-                      _vm._v(" "),
-                      _c("img", {
-                        staticClass: "card-img mx-auto d-block mt-4",
-                        attrs: { src: "/img/03.png", alt: "" }
-                      }),
-                      _vm._v(" "),
-                      _c(
-                        "p",
-                        { staticClass: "card-text text-center px-2 mt-4" },
-                        [
-                          _c("strong", [
-                            _vm._v("Choose the package that best suits you")
-                          ])
-                        ]
-                      )
-                    ])
-                  ])
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "col-md-2 card-group",
-                  attrs: {
-                    "data-aos": "fade-up",
-                    "data-aos-offset": "200",
-                    "data-aos-duration": "1400"
-                  }
-                },
-                [
-                  _c("div", { staticClass: "card border-0" }, [
-                    _c("div", { staticClass: "card-body" }, [
-                      _c("div", { staticClass: "num-circle" }, [_vm._v("4")]),
-                      _vm._v(" "),
-                      _c("img", {
-                        staticClass: "card-img mx-auto d-block mt-4",
-                        attrs: { src: "/img/04.png", alt: "" }
-                      }),
-                      _vm._v(" "),
-                      _c(
-                        "p",
-                        { staticClass: "card-text text-center px-2 mt-4" },
-                        [_c("strong", [_vm._v("Review terms and conditions")])]
-                      )
-                    ])
-                  ])
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "col-md-2 card-group",
-                  attrs: {
-                    "data-aos": "fade-up",
-                    "data-aos-offset": "200",
-                    "data-aos-duration": "1700"
-                  }
-                },
-                [
-                  _c("div", { staticClass: "card border-0" }, [
-                    _c("div", { staticClass: "card-body" }, [
-                      _c("div", { staticClass: "num-circle" }, [_vm._v("5")]),
-                      _vm._v(" "),
-                      _c("img", {
-                        staticClass: "card-img mx-auto d-block mt-4",
-                        attrs: { src: "/img/05.png", alt: "" }
-                      }),
-                      _vm._v(" "),
-                      _c(
-                        "p",
-                        { staticClass: "card-text text-center px-2 mt-4" },
-                        [
-                          _c("strong", [
-                            _vm._v("Fill up the requirement forms and details")
-                          ])
-                        ]
-                      )
-                    ])
-                  ])
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "col-md-2 card-group",
-                  attrs: {
-                    "data-aos": "fade-up",
-                    "data-aos-offset": "200",
-                    "data-aos-duration": "2000"
-                  }
-                },
-                [
-                  _c("div", { staticClass: "card border-0" }, [
-                    _c("div", { staticClass: "card-body" }, [
-                      _c("div", { staticClass: "num-circle" }, [_vm._v("6")]),
-                      _vm._v(" "),
-                      _c("img", {
-                        staticClass: "card-img mx-auto d-block mt-4",
-                        attrs: { src: "/img/06.png", alt: "" }
-                      }),
-                      _vm._v(" "),
-                      _c(
-                        "p",
-                        { staticClass: "card-text text-center px-2 mt-4" },
-                        [
-                          _c("strong", [
-                            _vm._v("Choose a plan for payments and options")
-                          ])
-                        ]
-                      )
-                    ])
-                  ])
-                ]
-              )
-            ])
+            )
           ])
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "section",
-        { staticClass: "section bg-white", attrs: { id: "benefits" } },
-        [
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "section",
+      { staticClass: "section section-2", attrs: { id: "how-it-works" } },
+      [
+        _c("div", { staticClass: "container" }, [
           _c(
             "div",
             {
-              staticClass: "container",
+              staticClass: "text-center",
               attrs: {
-                "data-aos": "zoom-in",
+                "data-aos": "fade-down",
                 "data-aos-offset": "400",
                 "data-aos-duration": "1000"
               }
@@ -2307,70 +2081,60 @@ var staticRenderFns = [
             [
               _c("p", { staticClass: "section-vid-text-1" }, [
                 _c("span", { staticClass: "text-primary" }, [
-                  _vm._v("REGISTER FOR FREE!")
+                  _vm._v("We've brought more than 50,000 Products")
                 ]),
-                _vm._v(" No Credit Card Needed "),
-                _c("span", { staticClass: "float-right" }, [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "btn btn-lg btn-primary py-3 px-5",
-                      attrs: { href: "" }
-                    },
-                    [_vm._v("Get Started")]
-                  )
-                ])
-              ])
-            ]
-          )
-        ]
-      ),
-      _vm._v(" "),
-      _c("section", { staticClass: "section section-3" }, [
-        _c("div", { staticClass: "container text-center" }, [
-          _c(
-            "div",
-            {
-              attrs: {
-                "data-aos": "zoom-in-up",
-                "data-aos-offset": "200",
-                "data-aos-duration": "300"
-              }
-            },
-            [
-              _c("p", { staticClass: "section-vid-text-1" }, [
-                _vm._v("Why you should choose "),
-                _c("span", { staticClass: "text-primary" }, [
-                  _vm._v("BilisBenta?")
-                ])
+                _vm._v(
+                  " to sell in one Roof from different manufacturers and suppliers in to one marketplace."
+                )
               ])
             ]
           ),
           _vm._v(" "),
-          _c("div", { staticClass: "row check-mark text-left" }, [
+          _c(
+            "div",
+            {
+              staticClass: "text-center",
+              attrs: {
+                "data-aos": "fade-down",
+                "data-aos-offset": "400",
+                "data-aos-duration": "1000"
+              }
+            },
+            [
+              _c("p", { staticClass: "section-vid-text-2 mt-4 px-5" }, [
+                _vm._v(
+                  "You can list and sell products without ever having to buy inventory up front or pack and ship orders."
+                )
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "row my-5 pt-5" }, [
             _c(
               "div",
               {
-                staticClass: "col-md-3",
+                staticClass: "col-md-2 card-group",
                 attrs: {
-                  "data-aos": "zoom-in-up",
+                  "data-aos": "fade-up",
                   "data-aos-offset": "200",
                   "data-aos-duration": "500"
                 }
               },
               [
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-3 pt-4" }, [
+                _c("div", { staticClass: "card border-0" }, [
+                  _c("div", { staticClass: "card-body" }, [
+                    _c("div", { staticClass: "num-circle" }, [_vm._v("1")]),
+                    _vm._v(" "),
                     _c("img", {
-                      staticClass: "img-fluid",
-                      attrs: { src: "/img/check-mark.png", alt: "" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-9" }, [
-                    _c("p", { staticClass: "section-vid-text-2" }, [
-                      _vm._v("No manpower needed")
-                    ])
+                      staticClass: "card-img mx-auto d-block mt-4",
+                      attrs: { src: "/img/01.png", alt: "" }
+                    }),
+                    _vm._v(" "),
+                    _c(
+                      "p",
+                      { staticClass: "card-text text-center px-2 mt-4" },
+                      [_c("strong", [_vm._v("Sign up and log in")])]
+                    )
                   ])
                 ])
               ]
@@ -2379,26 +2143,32 @@ var staticRenderFns = [
             _c(
               "div",
               {
-                staticClass: "col-md-3",
+                staticClass: "col-md-2 card-group",
                 attrs: {
-                  "data-aos": "zoom-in-up",
+                  "data-aos": "fade-up",
                   "data-aos-offset": "200",
-                  "data-aos-duration": "700"
+                  "data-aos-duration": "800"
                 }
               },
               [
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-3 pt-4" }, [
+                _c("div", { staticClass: "card border-0" }, [
+                  _c("div", { staticClass: "card-body" }, [
+                    _c("div", { staticClass: "num-circle" }, [_vm._v("2")]),
+                    _vm._v(" "),
                     _c("img", {
-                      staticClass: "img-fluid",
-                      attrs: { src: "/img/check-mark.png", alt: "" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-9" }, [
-                    _c("p", { staticClass: "section-vid-text-2" }, [
-                      _vm._v("No warehouse rental")
-                    ])
+                      staticClass: "card-img mx-auto d-block mt-4",
+                      attrs: { src: "/img/02.png", alt: "" }
+                    }),
+                    _vm._v(" "),
+                    _c(
+                      "p",
+                      { staticClass: "card-text text-center px-2 mt-4" },
+                      [
+                        _c("strong", [
+                          _vm._v("Free Browsing on all the packages we offer")
+                        ])
+                      ]
+                    )
                   ])
                 ])
               ]
@@ -2407,84 +2177,32 @@ var staticRenderFns = [
             _c(
               "div",
               {
-                staticClass: "col-md-3",
+                staticClass: "col-md-2 card-group",
                 attrs: {
-                  "data-aos": "zoom-in-up",
-                  "data-aos-offset": "200",
-                  "data-aos-duration": "900"
-                }
-              },
-              [
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-3 pt-4" }, [
-                    _c("img", {
-                      staticClass: "img-fluid",
-                      attrs: { src: "/img/check-mark.png", alt: "" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-9" }, [
-                    _c("p", { staticClass: "section-vid-text-2" }, [
-                      _vm._v("No capital on inventory")
-                    ])
-                  ])
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "col-md-3",
-                attrs: {
-                  "data-aos": "zoom-in-up",
+                  "data-aos": "fade-up",
                   "data-aos-offset": "200",
                   "data-aos-duration": "1100"
                 }
               },
               [
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-3 pt-4" }, [
+                _c("div", { staticClass: "card border-0" }, [
+                  _c("div", { staticClass: "card-body" }, [
+                    _c("div", { staticClass: "num-circle" }, [_vm._v("3")]),
+                    _vm._v(" "),
                     _c("img", {
-                      staticClass: "img-fluid",
-                      attrs: { src: "/img/check-mark.png", alt: "" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-9" }, [
-                    _c("p", { staticClass: "section-vid-text-2" }, [
-                      _vm._v("No overhead expenses")
-                    ])
-                  ])
-                ])
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "row mt-5 text-left" }, [
-            _c(
-              "div",
-              {
-                staticClass: "col-md-3",
-                attrs: {
-                  "data-aos": "zoom-in-up",
-                  "data-aos-offset": "100",
-                  "data-aos-duration": "1300"
-                }
-              },
-              [
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-3 pt-4" }, [
-                    _c("img", {
-                      staticClass: "img-fluid",
-                      attrs: { src: "/img/check-mark.png", alt: "" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-9" }, [
-                    _c("p", { staticClass: "section-vid-text-2" }, [
-                      _vm._v("No accounting needed")
-                    ])
+                      staticClass: "card-img mx-auto d-block mt-4",
+                      attrs: { src: "/img/03.png", alt: "" }
+                    }),
+                    _vm._v(" "),
+                    _c(
+                      "p",
+                      { staticClass: "card-text text-center px-2 mt-4" },
+                      [
+                        _c("strong", [
+                          _vm._v("Choose the package that best suits you")
+                        ])
+                      ]
+                    )
                   ])
                 ])
               ]
@@ -2493,26 +2211,28 @@ var staticRenderFns = [
             _c(
               "div",
               {
-                staticClass: "col-md-3",
+                staticClass: "col-md-2 card-group",
                 attrs: {
-                  "data-aos": "zoom-in-up",
-                  "data-aos-offset": "100",
-                  "data-aos-duration": "1500"
+                  "data-aos": "fade-up",
+                  "data-aos-offset": "200",
+                  "data-aos-duration": "1400"
                 }
               },
               [
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-3 pt-4" }, [
+                _c("div", { staticClass: "card border-0" }, [
+                  _c("div", { staticClass: "card-body" }, [
+                    _c("div", { staticClass: "num-circle" }, [_vm._v("4")]),
+                    _vm._v(" "),
                     _c("img", {
-                      staticClass: "img-fluid",
-                      attrs: { src: "/img/check-mark.png", alt: "" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-9" }, [
-                    _c("p", { staticClass: "section-vid-text-2" }, [
-                      _vm._v("Great product sourcing")
-                    ])
+                      staticClass: "card-img mx-auto d-block mt-4",
+                      attrs: { src: "/img/04.png", alt: "" }
+                    }),
+                    _vm._v(" "),
+                    _c(
+                      "p",
+                      { staticClass: "card-text text-center px-2 mt-4" },
+                      [_c("strong", [_vm._v("Review terms and conditions")])]
+                    )
                   ])
                 ])
               ]
@@ -2521,26 +2241,32 @@ var staticRenderFns = [
             _c(
               "div",
               {
-                staticClass: "col-md-3",
+                staticClass: "col-md-2 card-group",
                 attrs: {
-                  "data-aos": "zoom-in-up",
-                  "data-aos-offset": "100",
+                  "data-aos": "fade-up",
+                  "data-aos-offset": "200",
                   "data-aos-duration": "1700"
                 }
               },
               [
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-3 pt-4" }, [
+                _c("div", { staticClass: "card border-0" }, [
+                  _c("div", { staticClass: "card-body" }, [
+                    _c("div", { staticClass: "num-circle" }, [_vm._v("5")]),
+                    _vm._v(" "),
                     _c("img", {
-                      staticClass: "img-fluid",
-                      attrs: { src: "/img/check-mark.png", alt: "" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-9" }, [
-                    _c("p", { staticClass: "section-vid-text-2" }, [
-                      _vm._v("Milti category products")
-                    ])
+                      staticClass: "card-img mx-auto d-block mt-4",
+                      attrs: { src: "/img/05.png", alt: "" }
+                    }),
+                    _vm._v(" "),
+                    _c(
+                      "p",
+                      { staticClass: "card-text text-center px-2 mt-4" },
+                      [
+                        _c("strong", [
+                          _vm._v("Fill up the requirement forms and details")
+                        ])
+                      ]
+                    )
                   ])
                 ])
               ]
@@ -2549,283 +2275,373 @@ var staticRenderFns = [
             _c(
               "div",
               {
-                staticClass: "col-md-3",
+                staticClass: "col-md-2 card-group",
                 attrs: {
-                  "data-aos": "zoom-in-up",
-                  "data-aos-offset": "100",
-                  "data-aos-duration": "1900"
+                  "data-aos": "fade-up",
+                  "data-aos-offset": "200",
+                  "data-aos-duration": "2000"
                 }
               },
               [
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-3 pt-4" }, [
+                _c("div", { staticClass: "card border-0" }, [
+                  _c("div", { staticClass: "card-body" }, [
+                    _c("div", { staticClass: "num-circle" }, [_vm._v("6")]),
+                    _vm._v(" "),
                     _c("img", {
-                      staticClass: "img-fluid",
-                      attrs: { src: "/img/check-mark.png", alt: "" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-md-9" }, [
-                    _c("p", { staticClass: "section-vid-text-2" }, [
-                      _vm._v("Everyone can sell")
-                    ])
+                      staticClass: "card-img mx-auto d-block mt-4",
+                      attrs: { src: "/img/06.png", alt: "" }
+                    }),
+                    _vm._v(" "),
+                    _c(
+                      "p",
+                      { staticClass: "card-text text-center px-2 mt-4" },
+                      [
+                        _c("strong", [
+                          _vm._v("Choose a plan for payments and options")
+                        ])
+                      ]
+                    )
                   ])
                 ])
               ]
             )
           ])
         ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "parallax-mid-image" }, [
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "section",
+      { staticClass: "section bg-white", attrs: { id: "benefits" } },
+      [
         _c(
           "div",
           {
             staticClass: "container",
             attrs: {
-              "data-aos": "zoom-in-right",
+              "data-aos": "zoom-in",
               "data-aos-offset": "400",
               "data-aos-duration": "1000"
             }
           },
           [
-            _c("div", { staticClass: "row para-mid-card" }, [
-              _c("div", { staticClass: "col-md-6" }, [
-                _c("div", { staticClass: "para-box px-5" }, [
-                  _c("p", { staticClass: "section-vid-text-1" }, [
-                    _vm._v("Find everything you need from one Supplier account")
-                  ]),
-                  _vm._v(" "),
-                  _c("p", { staticClass: "section-vid-text-2" }, [
-                    _vm._v(
-                      "With Bilisbenta you don't need to signup with suppliers. In fact you can perform all the tasks from selling products, to processing orders nad Chatting you customers"
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass:
-                        "btn btn-lg btn-outline-primary py-3 px-5 mt-2",
-                      attrs: { href: "" }
-                    },
-                    [_vm._v("Get Started")]
-                  )
-                ])
+            _c("p", { staticClass: "section-vid-text-1" }, [
+              _c("span", { staticClass: "text-primary" }, [
+                _vm._v("REGISTER FOR FREE!")
+              ]),
+              _vm._v(" No Credit Card Needed "),
+              _c("span", { staticClass: "float-right" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn btn-lg btn-primary py-3 px-5",
+                    attrs: { href: "" }
+                  },
+                  [_vm._v("Get Started")]
+                )
               ])
             ])
           ]
         )
-      ]),
-      _vm._v(" "),
-      _c(
-        "section",
-        { staticClass: "section section-4", attrs: { id: "packages" } },
-        [
-          _c("div", { staticClass: "container text-center" }, [
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("section", { staticClass: "section section-3" }, [
+      _c("div", { staticClass: "container text-center" }, [
+        _c(
+          "div",
+          {
+            attrs: {
+              "data-aos": "zoom-in-up",
+              "data-aos-offset": "200",
+              "data-aos-duration": "300"
+            }
+          },
+          [
             _c("p", { staticClass: "section-vid-text-1" }, [
-              _vm._v("We have 3 packages available!")
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                {
-                  staticClass: "col-md-4 card-group",
-                  attrs: {
-                    "data-aos": "zoom-out-down",
-                    "data-aos-offset": "400",
-                    "data-aos-duration": "1000"
-                  }
-                },
-                [
-                  _c("div", { staticClass: "card border-0" }, [
-                    _c("div", { staticClass: "card-title pt-3" }, [
-                      _c("h2", [_vm._v("Basic")])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "card-header border-0" }, [
-                      _c("h1", [_vm._v("$25/mo")]),
-                      _c("span", [_vm._v("(or $129 annualy)")])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "card-body" }, [
-                      _c("p", { staticClass: "packages" }, [
-                        _c("br"),
-                        _vm._v("Exclusive access to \n                    "),
-                        _c("br"),
-                        _vm._v("BilisBenta top Sellers\n                    "),
-                        _c("br"),
-                        _vm._v("Elite Seller Report\n                    "),
-                        _c("br"),
-                        _vm._v(
-                          "All Premium Data Exports\n                    "
-                        ),
-                        _c("br"),
-                        _vm._v("(Amazon|Ebay|Shopify)\n                    "),
-                        _c("br"),
-                        _vm._v("Custom Data Export\n                  ")
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "a",
-                        {
-                          staticClass:
-                            "btn btn-lg btn-outline-primary py-2 px-5 my-4",
-                          attrs: { href: "" }
-                        },
-                        [_vm._v("BUY PACKAGE")]
-                      )
-                    ])
-                  ])
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "col-md-4 card-group",
-                  attrs: {
-                    "data-aos": "zoom-out-down",
-                    "data-aos-offset": "400",
-                    "data-aos-duration": "1500"
-                  }
-                },
-                [
-                  _c("div", { staticClass: "card border-0" }, [
-                    _c("div", { staticClass: "card-title pt-3" }, [
-                      _c("h2", [_vm._v("Standard")])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "card-header border-0" }, [
-                      _c("h1", [_vm._v("$45/mo")]),
-                      _c("span", [_vm._v("(or $129 annualy)")])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "card-body" }, [
-                      _c("p", { staticClass: "packages" }, [
-                        _c("br"),
-                        _vm._v("Exclusive access to \n                  "),
-                        _c("br"),
-                        _vm._v("BilisBenta top Sellers\n                  "),
-                        _c("br"),
-                        _vm._v("Elite Seller Report\n                  "),
-                        _c("br"),
-                        _vm._v("All Premium Data Exports\n                  "),
-                        _c("br"),
-                        _vm._v("(Amazon|Ebay|Shopify)\n                  "),
-                        _c("br"),
-                        _vm._v("Custom Data Export\n                ")
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "a",
-                        {
-                          staticClass:
-                            "btn btn-lg btn-outline-primary py-2 px-5 my-4",
-                          attrs: { href: "" }
-                        },
-                        [_vm._v("BUY PACKAGE")]
-                      )
-                    ])
-                  ])
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "col-md-4 card-group",
-                  attrs: {
-                    "data-aos": "zoom-out-down",
-                    "data-aos-offset": "400",
-                    "data-aos-duration": "2000"
-                  }
-                },
-                [
-                  _c("div", { staticClass: "card border-0" }, [
-                    _c("div", { staticClass: "card-title pt-3" }, [
-                      _c("h2", [_vm._v("Premium")])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "card-header border-0" }, [
-                      _c("h1", [_vm._v("$55/mo")]),
-                      _c("span", [_vm._v("(or $129 annualy)")])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "card-body" }, [
-                      _c("p", { staticClass: "packages" }, [
-                        _c("br"),
-                        _vm._v("Exclusive access to \n                  "),
-                        _c("br"),
-                        _vm._v("BilisBenta top Sellers\n                  "),
-                        _c("br"),
-                        _vm._v("Elite Seller Report\n                  "),
-                        _c("br"),
-                        _vm._v("All Premium Data Exports\n                  "),
-                        _c("br"),
-                        _vm._v("(Amazon|Ebay|Shopify)\n                  "),
-                        _c("br"),
-                        _vm._v("Custom Data Export\n                ")
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "a",
-                        {
-                          staticClass:
-                            "btn btn-lg btn-outline-primary py-2 px-5 my-4",
-                          attrs: { href: "" }
-                        },
-                        [_vm._v("BUY PACKAGE")]
-                      )
-                    ])
-                  ])
-                ]
-              )
+              _vm._v("Why you should choose "),
+              _c("span", { staticClass: "text-primary" }, [
+                _vm._v("BilisBenta?")
+              ])
             ])
-          ])
-        ]
-      ),
-      _vm._v(" "),
+          ]
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "row check-mark text-left" }, [
+          _c(
+            "div",
+            {
+              staticClass: "col-md-3",
+              attrs: {
+                "data-aos": "zoom-in-up",
+                "data-aos-offset": "200",
+                "data-aos-duration": "500"
+              }
+            },
+            [
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-md-3 pt-4" }, [
+                  _c("img", {
+                    staticClass: "img-fluid",
+                    attrs: { src: "/img/check-mark.png", alt: "" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-9" }, [
+                  _c("p", { staticClass: "section-vid-text-2" }, [
+                    _vm._v("No manpower needed")
+                  ])
+                ])
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "col-md-3",
+              attrs: {
+                "data-aos": "zoom-in-up",
+                "data-aos-offset": "200",
+                "data-aos-duration": "700"
+              }
+            },
+            [
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-md-3 pt-4" }, [
+                  _c("img", {
+                    staticClass: "img-fluid",
+                    attrs: { src: "/img/check-mark.png", alt: "" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-9" }, [
+                  _c("p", { staticClass: "section-vid-text-2" }, [
+                    _vm._v("No warehouse rental")
+                  ])
+                ])
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "col-md-3",
+              attrs: {
+                "data-aos": "zoom-in-up",
+                "data-aos-offset": "200",
+                "data-aos-duration": "900"
+              }
+            },
+            [
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-md-3 pt-4" }, [
+                  _c("img", {
+                    staticClass: "img-fluid",
+                    attrs: { src: "/img/check-mark.png", alt: "" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-9" }, [
+                  _c("p", { staticClass: "section-vid-text-2" }, [
+                    _vm._v("No capital on inventory")
+                  ])
+                ])
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "col-md-3",
+              attrs: {
+                "data-aos": "zoom-in-up",
+                "data-aos-offset": "200",
+                "data-aos-duration": "1100"
+              }
+            },
+            [
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-md-3 pt-4" }, [
+                  _c("img", {
+                    staticClass: "img-fluid",
+                    attrs: { src: "/img/check-mark.png", alt: "" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-9" }, [
+                  _c("p", { staticClass: "section-vid-text-2" }, [
+                    _vm._v("No overhead expenses")
+                  ])
+                ])
+              ])
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row mt-5 text-left" }, [
+          _c(
+            "div",
+            {
+              staticClass: "col-md-3",
+              attrs: {
+                "data-aos": "zoom-in-up",
+                "data-aos-offset": "100",
+                "data-aos-duration": "1300"
+              }
+            },
+            [
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-md-3 pt-4" }, [
+                  _c("img", {
+                    staticClass: "img-fluid",
+                    attrs: { src: "/img/check-mark.png", alt: "" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-9" }, [
+                  _c("p", { staticClass: "section-vid-text-2" }, [
+                    _vm._v("No accounting needed")
+                  ])
+                ])
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "col-md-3",
+              attrs: {
+                "data-aos": "zoom-in-up",
+                "data-aos-offset": "100",
+                "data-aos-duration": "1500"
+              }
+            },
+            [
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-md-3 pt-4" }, [
+                  _c("img", {
+                    staticClass: "img-fluid",
+                    attrs: { src: "/img/check-mark.png", alt: "" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-9" }, [
+                  _c("p", { staticClass: "section-vid-text-2" }, [
+                    _vm._v("Great product sourcing")
+                  ])
+                ])
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "col-md-3",
+              attrs: {
+                "data-aos": "zoom-in-up",
+                "data-aos-offset": "100",
+                "data-aos-duration": "1700"
+              }
+            },
+            [
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-md-3 pt-4" }, [
+                  _c("img", {
+                    staticClass: "img-fluid",
+                    attrs: { src: "/img/check-mark.png", alt: "" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-9" }, [
+                  _c("p", { staticClass: "section-vid-text-2" }, [
+                    _vm._v("Milti category products")
+                  ])
+                ])
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "col-md-3",
+              attrs: {
+                "data-aos": "zoom-in-up",
+                "data-aos-offset": "100",
+                "data-aos-duration": "1900"
+              }
+            },
+            [
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-md-3 pt-4" }, [
+                  _c("img", {
+                    staticClass: "img-fluid",
+                    attrs: { src: "/img/check-mark.png", alt: "" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-9" }, [
+                  _c("p", { staticClass: "section-vid-text-2" }, [
+                    _vm._v("Everyone can sell")
+                  ])
+                ])
+              ])
+            ]
+          )
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "parallax-mid-image" }, [
       _c(
         "div",
-        { staticClass: "para-footer section", attrs: { id: "contact" } },
+        {
+          staticClass: "container",
+          attrs: {
+            "data-aos": "zoom-in-right",
+            "data-aos-offset": "400",
+            "data-aos-duration": "1000"
+          }
+        },
         [
-          _c("div", { staticClass: "container" }, [
-            _c(
-              "div",
-              {
-                attrs: {
-                  "data-aos": "fade-in",
-                  "data-aos-offset": "200",
-                  "data-aos-duration": "1500"
-                }
-              },
-              [
-                _c("div", { staticClass: "section-vid-text-1 pb-5" }, [
-                  _vm._v("Online selling made easy")
+          _c("div", { staticClass: "row para-mid-card" }, [
+            _c("div", { staticClass: "col-md-6" }, [
+              _c("div", { staticClass: "para-box px-5" }, [
+                _c("p", { staticClass: "section-vid-text-1" }, [
+                  _vm._v("Find everything you need from one Supplier account")
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "section-vid-text-2 pt-5" }, [
-                  _vm._v("REGISTER FOR FREE")
+                _c("p", { staticClass: "section-vid-text-2" }, [
+                  _vm._v(
+                    "With Bilisbenta you don't need to signup with suppliers. In fact you can perform all the tasks from selling products, to processing orders nad Chatting you customers"
+                  )
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "section-vid-text-2" }, [
-                  _vm._v("No Credit Card Needed")
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c("div", { staticClass: "pt-5" }, [
-              _c("p", [
-                _vm._v("©Copyright 2020 BilisBenta. Created by: "),
                 _c(
                   "a",
                   {
-                    staticClass: "text-decoration-none",
-                    attrs: { href: "https://mach95.com/", target: "_blank" }
+                    staticClass:
+                      "btn btn-lg btn-outline-primary py-3 px-5 mt-2",
+                    attrs: { href: "" }
                   },
-                  [_vm._v("Mach95")]
+                  [_vm._v("Get Started")]
                 )
               ])
             ])
@@ -2833,6 +2649,227 @@ var staticRenderFns = [
         ]
       )
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "section",
+      { staticClass: "section section-4", attrs: { id: "packages" } },
+      [
+        _c("div", { staticClass: "container text-center" }, [
+          _c("p", { staticClass: "section-vid-text-1" }, [
+            _vm._v("We have 3 packages available!")
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c(
+              "div",
+              {
+                staticClass: "col-md-4 card-group",
+                attrs: {
+                  "data-aos": "zoom-out-down",
+                  "data-aos-offset": "400",
+                  "data-aos-duration": "1000"
+                }
+              },
+              [
+                _c("div", { staticClass: "card border-0" }, [
+                  _c("div", { staticClass: "card-title pt-3" }, [
+                    _c("h2", [_vm._v("Basic")])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-header border-0" }, [
+                    _c("h1", [_vm._v("$25/mo")]),
+                    _c("span", [_vm._v("(or $129 annualy)")])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-body" }, [
+                    _c("p", { staticClass: "packages" }, [
+                      _c("br"),
+                      _vm._v("Exclusive access to\n                    "),
+                      _c("br"),
+                      _vm._v("BilisBenta top Sellers\n                    "),
+                      _c("br"),
+                      _vm._v("Elite Seller Report\n                    "),
+                      _c("br"),
+                      _vm._v("All Premium Data Exports\n                    "),
+                      _c("br"),
+                      _vm._v("(Amazon|Ebay|Shopify)\n                    "),
+                      _c("br"),
+                      _vm._v("Custom Data Export\n                  ")
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass:
+                          "btn btn-lg btn-outline-primary py-2 px-5 my-4",
+                        attrs: { href: "" }
+                      },
+                      [_vm._v("BUY PACKAGE")]
+                    )
+                  ])
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "col-md-4 card-group",
+                attrs: {
+                  "data-aos": "zoom-out-down",
+                  "data-aos-offset": "400",
+                  "data-aos-duration": "1500"
+                }
+              },
+              [
+                _c("div", { staticClass: "card border-0" }, [
+                  _c("div", { staticClass: "card-title pt-3" }, [
+                    _c("h2", [_vm._v("Standard")])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-header border-0" }, [
+                    _c("h1", [_vm._v("$45/mo")]),
+                    _c("span", [_vm._v("(or $129 annualy)")])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-body" }, [
+                    _c("p", { staticClass: "packages" }, [
+                      _c("br"),
+                      _vm._v("Exclusive access to\n                  "),
+                      _c("br"),
+                      _vm._v("BilisBenta top Sellers\n                  "),
+                      _c("br"),
+                      _vm._v("Elite Seller Report\n                  "),
+                      _c("br"),
+                      _vm._v("All Premium Data Exports\n                  "),
+                      _c("br"),
+                      _vm._v("(Amazon|Ebay|Shopify)\n                  "),
+                      _c("br"),
+                      _vm._v("Custom Data Export\n                ")
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass:
+                          "btn btn-lg btn-outline-primary py-2 px-5 my-4",
+                        attrs: { href: "" }
+                      },
+                      [_vm._v("BUY PACKAGE")]
+                    )
+                  ])
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "col-md-4 card-group",
+                attrs: {
+                  "data-aos": "zoom-out-down",
+                  "data-aos-offset": "400",
+                  "data-aos-duration": "2000"
+                }
+              },
+              [
+                _c("div", { staticClass: "card border-0" }, [
+                  _c("div", { staticClass: "card-title pt-3" }, [
+                    _c("h2", [_vm._v("Premium")])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-header border-0" }, [
+                    _c("h1", [_vm._v("$55/mo")]),
+                    _c("span", [_vm._v("(or $129 annualy)")])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-body" }, [
+                    _c("p", { staticClass: "packages" }, [
+                      _c("br"),
+                      _vm._v("Exclusive access to\n                  "),
+                      _c("br"),
+                      _vm._v("BilisBenta top Sellers\n                  "),
+                      _c("br"),
+                      _vm._v("Elite Seller Report\n                  "),
+                      _c("br"),
+                      _vm._v("All Premium Data Exports\n                  "),
+                      _c("br"),
+                      _vm._v("(Amazon|Ebay|Shopify)\n                  "),
+                      _c("br"),
+                      _vm._v("Custom Data Export\n                ")
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass:
+                          "btn btn-lg btn-outline-primary py-2 px-5 my-4",
+                        attrs: { href: "" }
+                      },
+                      [_vm._v("BUY PACKAGE")]
+                    )
+                  ])
+                ])
+              ]
+            )
+          ])
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "para-footer section", attrs: { id: "contact" } },
+      [
+        _c("div", { staticClass: "container" }, [
+          _c(
+            "div",
+            {
+              attrs: {
+                "data-aos": "fade-in",
+                "data-aos-offset": "200",
+                "data-aos-duration": "1500"
+              }
+            },
+            [
+              _c("div", { staticClass: "section-vid-text-1 pb-5" }, [
+                _vm._v("Online selling made easy")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "section-vid-text-2 pt-5" }, [
+                _vm._v("REGISTER FOR FREE")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "section-vid-text-2" }, [
+                _vm._v("No Credit Card Needed")
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "pt-5" }, [
+            _c("p", [
+              _vm._v("©Copyright 2020 BilisBenta. Created by: "),
+              _c(
+                "a",
+                {
+                  staticClass: "text-decoration-none",
+                  attrs: { href: "https://mach95.com/", target: "_blank" }
+                },
+                [_vm._v("Mach95")]
+              )
+            ])
+          ])
+        ])
+      ]
+    )
   }
 ]
 render._withStripped = true
@@ -19093,12 +19130,12 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
 /* harmony import */ var _views_Home_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../views/Home.vue */ "./resources/js/views/Home.vue");
 
 
 
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_3__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
 var routes = [{
   path: '/',
   name: 'Home',
@@ -19122,7 +19159,7 @@ var routes = [{
     return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! ../views/Register.vue */ "./resources/js/views/Register.vue"));
   }
 }];
-var router = new vue_router__WEBPACK_IMPORTED_MODULE_3__["default"]({
+var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: routes
