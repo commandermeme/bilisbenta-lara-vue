@@ -28,9 +28,9 @@
                                     <div class="input-group mb-3">
                                         <div class="">
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" name="remember" id="remember">
+                                                <input class="form-check-input" type="checkbox" name="remember_me" id="remember_me">
 
-                                                <label class="form-check-label text-muted" for="remember">Remember Me</label>
+                                                <label class="form-check-label text-muted" for="remember_me">Remember Me</label>
                                             </div>
                                         </div>
                                     </div>

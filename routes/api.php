@@ -18,6 +18,12 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
-Route::prefix('user')->group( function() {
-    Route::post('/login', 'Api\UsersController@login');
+Route::prefix('auth')->group( function() {
+    Route::post('register', 'Api\AuthController@register');
+    Route::post('verify', 'Api\AuthController@verifyOtp');
+    Route::post('login', 'Api\AuthController@login');
+
+    Route::group(['middleware' => 'auth:api'], function () {
+        Route::get('logout', 'Api\AuthController@logout');
+    });
 });
