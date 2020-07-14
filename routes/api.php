@@ -36,3 +36,10 @@ Route::prefix('user')->group( function() {
         });
     });
 });
+
+Route::middleware('auth:api')->group(function() {
+    Route::get('products', 'Api\ProductsController@index');
+    Route::get('products/{id}', 'Api\ProductsController@show');
+    Route::get('category', 'Api\ProductsController@category');
+    Route::get('category/{id}', 'Api\ProductsController@showCategory');
+});
