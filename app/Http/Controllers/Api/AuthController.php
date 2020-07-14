@@ -84,49 +84,31 @@ class AuthController extends Controller
         $request->validate([
             'email' => 'required|email|string|max:255',
             'password' => 'required|string|min:8',
-            'remember_me' => 'boolean',
         ]);
 
-        if (!Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
-            return response()->json([
-                'success' => false,
-                'message' => 'Unauthorized',
-                'status_code' => 401,
-            ], 401);
-        }
+        if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
+            $user = Auth::user();
 
-        $user = $request->user();
+            $tokenData = $user->createToken($user->email .'_'. now(), [$user->role]);
 
-        if ($user->role == 'administrator') {
-            $tokenData = $user->createToken('Personal Access Token', ['do-anything']);
-        } else {
-            $tokenData = $user->createToken('Personal Access Token', ['buy-and-sell']);
-        }
-        
-        $token = $tokenData->token;
-
-        if ($request->remember_me) {
-            $token->expires_at = Carbon::now()->addWeeks(1);
-        }
-
-        if ($token->save()) {
             return response()->json([
                 'success' => true,
                 'user' => $user,
                 'access_token' => $tokenData->accessToken,
                 'token_type' => 'Bearer',
-                'token_scope' => $tokenData->token->scopes[0],
-                'expires_at' => Carbon::parse($tokenData->token->expires_at)->toDateTimeString(),
+                'token_scope' => $tokenData->token->scopes,
                 'status_code' => 200,
             ], 200);
+
+            
         }
         else {
             return response()->json([
                 'success' => false,
-                'message' => 'Some error occured, Please try again',
-                'status_code' => 500,
-            ], 500);
-        } 
+                'message' => 'Unauthorized to access.',
+                'status_code' => 401,
+            ], 401);
+        }
     }
 
     public function logout(Request $request)

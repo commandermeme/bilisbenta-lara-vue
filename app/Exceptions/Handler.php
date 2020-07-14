@@ -2,6 +2,7 @@
 
 namespace App\Exceptions;
 
+use Laravel\Passport\Exceptions\MissingScopeException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Throwable;
 
@@ -50,6 +51,11 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Throwable $exception)
     {
+        if ($exception instanceof MissingScopeException) {
+            return response()->json([
+                'message' => 'You are not authorized to access.'
+            ], 403);
+        }
         return parent::render($request, $exception);
     }
 }
