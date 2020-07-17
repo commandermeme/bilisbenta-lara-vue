@@ -9,20 +9,20 @@
                         <div class="row">
                             <div class="col-md-9 p-4">
                                 <p class="text-muted">Create account</p>
-                                <form method="POST" action="">
+                                <form method="POST" @submit.prevent="register">
 
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
                                         </div>
-                                        <input id="email" type="email" class="form-control" name="email" required autocomplete="email" autofocus placeholder="Email Address">
+                                        <input id="email" type="email" class="form-control" name="email" required autocomplete="email" autofocus placeholder="Email Address" v-model="email">
                                     </div>
 
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"><i class="fa fa-lock" aria-hidden="true"></i></span>
                                         </div>
-                                        <input id="password" type="password" class="form-control" name="password" required autocomplete="current-password" placeholder="Password">
+                                        <input id="password" type="password" class="form-control" name="password" required autocomplete="current-password" placeholder="Password" v-model="password">
                                     </div>
 
                                     <div class="input-group mb-3">
@@ -39,7 +39,7 @@
                                         <div class="col-5">
                                             <button type="submit" class="btn btn-primary px-2">Sign up</button>
                                         </div>
-                            
+
                                     </div>
                                 </form>
                             </div>
@@ -65,13 +65,15 @@ export default {
     data() {
         return {
             register: {
-            username: "",
-            password: "",
+                email: "",
+                password: "",
             }
         }
     },
-    mounted() {
-        axios.post('/api/auth/register');
+    methods: {
+        register() {
+
+        }
     }
 }
 </script>

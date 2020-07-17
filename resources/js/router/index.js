@@ -9,23 +9,38 @@ const routes = [{
         name: 'Home',
         component: Home
     },
-    // {
-    //     path: '/about',
-    //     name: 'About',
-    //     component: () =>
-    //         import ('../components/Login.vue')
-    // },
     {
         path: '/login',
         name: 'Login',
         component: () =>
-            import ('../views/Login.vue')
+            import ('../views/Login.vue'),
+        meta: {
+            requiresVisitor: true,
+        }
     },
     {
         path: '/register',
         name: 'Register',
         component: () =>
-            import ('../views/Register.vue')
+            import ('../views/Register.vue'),
+        meta: {
+            requiresVisitor: true,
+        }
+    },
+    {
+        path: '/logout',
+        name: 'Logout',
+        component: () =>
+            import ('../views/Logout.vue')
+    },
+    {
+        path: '/dashboard',
+        name: 'Dashboard',
+        component: () =>
+            import ('../components/Dashboard.vue'),
+        meta: {
+            requiresAuth: true,
+        }
     }
 ]
 

@@ -9,20 +9,20 @@
                         <div class="row">
                             <div class="col-md-9 p-4">
                                 <p class="text-muted">Log in to your account</p>
-                                <form method="POST" action="">
+                                <form method="POST" @submit.prevent="login" >
 
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
                                         </div>
-                                        <input id="email" type="email" class="form-control" name="email" required autocomplete="email" autofocus placeholder="Email Address">
+                                        <input id="email" type="email" class="form-control" name="email" required autocomplete="email" autofocus placeholder="Email Address" v-model="email">
                                     </div>
 
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"><i class="fa fa-lock" aria-hidden="true"></i></span>
                                         </div>
-                                        <input id="password" type="password" class="form-control" name="password" required autocomplete="current-password" placeholder="Password">
+                                        <input id="password" type="password" class="form-control" name="password" required autocomplete="current-password" placeholder="Password" v-model="password">
                                     </div>
 
                                     <div class="input-group mb-3">
@@ -63,12 +63,29 @@
 
 <script>
 export default {
-    name: "Login"
+    name: "Login",
+    data() {
+        return {
+            email: '',
+            password: ''
+        }
+    },
+    methods: {
+        login() {
+            this.$store.dispatch('retrieveToken', {
+                email: this.email,
+                password: this.password
+            })
+            .then(response => {
+                this.$router.push('/dashboard')
+            })
+        }
+    }
 }
 </script>
 
 <style scoped>
-      
+
 .login {
     padding-top: 10%;
     background-image: url('/img/login-background.png');

@@ -100,7 +100,7 @@ class AuthController extends Controller
                 'status_code' => 200,
             ], 200);
 
-            
+
         }
         else {
             return response()->json([

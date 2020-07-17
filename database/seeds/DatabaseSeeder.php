@@ -1,16 +1,26 @@
 <?php
 
+use App\User;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
 {
-    /**
-     * Seed the application's database.
-     *
-     * @return void
-     */
     public function run()
     {
-        // $this->call(UserSeeder::class);
+        User::create([
+            'email' => 'admin@test.com',
+            'password' => Hash::make('admin'),
+            'role' => 'administrator',
+            'updated_at' => NULL,
+            'created_at' => NULL
+        ]);
+        User::create([
+            'email' => 'user@test.com',
+            'password' => Hash::make('secret'),
+            'role' => 'reseller',
+            'updated_at' => NULL,
+            'created_at' => NULL
+        ]);
     }
 }
