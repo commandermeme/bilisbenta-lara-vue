@@ -28,6 +28,15 @@ const routes = [{
         }
     },
     {
+        path: '/verify',
+        name: 'Verify',
+        component: () =>
+            import ('../views/Verify.vue'),
+        meta: {
+            requiresAuth: true,
+        }
+    },
+    {
         path: '/logout',
         name: 'Logout',
         component: () =>

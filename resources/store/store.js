@@ -31,9 +31,11 @@ export default new Vuex.Store({
                     })
                     .then(response => {
                         resolve(response)
+                        console.log(response)
                     })
                     .catch(error => {
                         reject(error)
+                        console.log(error)
                     })
             })
         },

@@ -64,15 +64,19 @@ export default {
     name: "Register",
     data() {
         return {
-            register: {
-                email: "",
-                password: "",
-            }
+                email: '',
+                password: ''
         }
     },
     methods: {
         register() {
-
+            this.$store.dispatch('register', {
+                email: this.email,
+                password: this.password
+            })
+            .then(response => {
+                this.$router.push('/verify')
+            })
         }
     }
 }

@@ -74,14 +74,21 @@ __webpack_require__.r(__webpack_exports__);
   name: "Register",
   data: function data() {
     return {
-      register: {
-        email: "",
-        password: ""
-      }
+      email: '',
+      password: ''
     };
   },
   methods: {
-    register: function register() {}
+    register: function register() {
+      var _this = this;
+
+      this.$store.dispatch('register', {
+        email: this.email,
+        password: this.password
+      }).then(function (response) {
+        _this.$router.push('/verify');
+      });
+    }
   }
 });
 

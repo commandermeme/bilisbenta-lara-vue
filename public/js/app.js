@@ -22238,6 +22238,15 @@ var routes = [{
     requiresVisitor: true
   }
 }, {
+  path: '/verify',
+  name: 'Verify',
+  component: function component() {
+    return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! ../views/Verify.vue */ "./resources/js/views/Verify.vue"));
+  },
+  meta: {
+    requiresAuth: true
+  }
+}, {
   path: '/logout',
   name: 'Logout',
   component: function component() {
@@ -22405,8 +22414,10 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vuex__WEBPACK_IMPORTED_MODULE_1__
           password: data.password
         }).then(function (response) {
           resolve(response);
+          console.log(response);
         })["catch"](function (error) {
           reject(error);
+          console.log(error);
         });
       });
     },
